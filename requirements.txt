@@ -1,0 +1,15 @@
+torch
+transformers
+sentence-transformers
+faiss-cpu
+langchain
+PyMuPDF
+python-dateutil
+fastapi
+uvicorn
+langchain-huggingface
+langchain-community
+langchain_openai
+langchain-text-splitters
+pypdf
+streamlit
