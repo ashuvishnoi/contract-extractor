@@ -5,7 +5,7 @@ from contract_extractor.retrieval.vector_index import VectorIndex
 class HybridRetriever:
     """
     Combines embedding-based retrieval with possible future extensions
-    (BM25, keyword-based search, or hybrid approaches).
+    (keyword-based search, or hybrid approaches).
     """
 
     def __init__(self, chunks):

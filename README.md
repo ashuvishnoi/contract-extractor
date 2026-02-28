@@ -4,9 +4,9 @@ A production-ready system for legal contract extraction using Retrieval-Augmente
 
 ## Features
 
-- **Contract Parsing:** Chunk and parse legal contracts for downstream processing.
-- **Retrieval:** Efficient document retrieval using FAISS and vector embeddings.
-- **Question Answering:** Extract contract clauses and answers using the CUAD QA model and OpenAI.
+- **Contract Parsing:** Chunk and parse legal contracts for downstream processing using Recursive Chunking strategy.
+- **Retrieval:** Efficient document retrieval using FAISS and CUAD model vector embeddings.
+- **Question Answering:** Extract contract clauses and answers using OpenAI.
 - **Postprocessing:** Clean and calibrate extracted information for accuracy.
 
 ## Directory Structure
@@ -14,7 +14,7 @@ A production-ready system for legal contract extraction using Retrieval-Augmente
 - `core/` — Extraction and pipeline logic
 - `parsing/` — Contract chunking and parsing modules
 - `processing/` — Postprocessing utilities
-- `qa/` — Question answering and calibration
+- `qa/` — Question answering using LLMs
 - `retrieval/` — Embeddings, retriever, and vector index
 
 ## Installation
@@ -30,7 +30,7 @@ pip install -r requirements.txt
 
    ```bash
    OPENAI_API_KEY=your_openai_api_key
-   HF_TOKEN=hugging face_token for cuad_model
+   HF_TOKEN=hugging face_token
    ```
    
 2. **Run StreamLit**

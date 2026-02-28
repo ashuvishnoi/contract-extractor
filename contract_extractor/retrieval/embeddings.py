@@ -4,7 +4,6 @@ import os
 HF_TOKEN = os.getenv("HF_TOKEN")
 
 
-
 class EmbeddingModel:
     """Wrapper for sentence-transformer embeddings."""
 

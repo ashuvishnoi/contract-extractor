@@ -1,7 +1,5 @@
 import ast
 
-
-
 class ValuesExtractor:
     def value_extractor(self, value, docs):
         if isinstance(value, str):
@@ -14,4 +12,3 @@ class ValuesExtractor:
                 return final_answer, page_no, snippet, confidence_score
             except (ValueError, SyntaxError):
                 return value, None, None, None
-
